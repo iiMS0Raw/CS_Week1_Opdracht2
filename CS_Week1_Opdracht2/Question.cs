@@ -16,6 +16,14 @@ namespace CS_Week1_Opdracht2
             Console.WriteLine(Text);
         }
 
+        public void PresentQuestion(Question q)
+        {
+            q.Display();
+            Console.WriteLine("Wat is uw antwoord? ");
+            var answer1 = Console.ReadLine();
+            Console.WriteLine(q.CheckAnswer(answer1));
+        }
+
         public string CheckAnswer(string answer)
         {
             return answer.Equals(CorrectResponse) ? "Uw antwoord is correct!" : "Uw antwoord is niet correct :(";
@@ -23,5 +31,5 @@ namespace CS_Week1_Opdracht2
 
 
     }
-  
+
 }

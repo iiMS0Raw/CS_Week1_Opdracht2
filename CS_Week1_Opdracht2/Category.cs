@@ -6,8 +6,8 @@ namespace CS_Week1_Opdracht2
 {
     public enum Category
     {
-        Wiskunde,
-        Aardrijkskunde,
-        Overig
+        Wiskunde = 1,
+        Aardrijkskunde = 2,
+        Overig = 3
     }
 }
