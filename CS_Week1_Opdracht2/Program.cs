@@ -19,7 +19,7 @@ namespace CS_Week1_Opdracht2
                 Text = "Welke maand is het?",
                 CorrectResponse = "November",
                 Category = Category.Overig,
-                Difficulty = Difficulty.Easy
+                Difficulty = Difficulty.Hard
             };
 
             q1.Display();

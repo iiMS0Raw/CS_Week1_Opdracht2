@@ -9,5 +9,6 @@ namespace CS_Week1_Opdracht2
         Easy,
         Medium,
         Hard
+
     }
 }

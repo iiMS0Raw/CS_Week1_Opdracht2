@@ -16,9 +16,16 @@ namespace CS_Week1_Opdracht2
             Console.WriteLine(Text);
         }
 
-        public bool CheckAnswer(string answer)
+        public string CheckAnswer(string answer)
         {
-            return answer == CorrectResponse;
+            if (answer.Equals(CorrectResponse))
+            {
+                return "Uw antwoord is correct!";
+            }
+            else
+            {
+                return"Uw antwoord is niet correct :(";
+            }
         }
 
 
