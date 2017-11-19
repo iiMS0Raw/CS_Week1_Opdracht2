@@ -4,10 +4,10 @@ using System.Text;
 
 namespace CS_Week1_Opdracht2
 {
-    enum Difficulty
+    public enum Difficulty
     {
         Easy,
-        Medium,
+        Normal,
         Hard
 
     }

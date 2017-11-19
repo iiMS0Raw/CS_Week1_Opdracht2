@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CS_Week1_Opdracht2
 {
-    enum Category
+    public enum Category
     {
         Wiskunde,
         Aardrijkskunde,

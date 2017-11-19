@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace CS_Week1_Opdracht2
 {
@@ -6,35 +9,51 @@ namespace CS_Week1_Opdracht2
     {
         static void Main(string[] args)
         {
-            Question q1 = new Question()
+
+            IList<Question> lijstMetVragen = new List<Question>()
             {
-                Text = "Wat is de naam van deze opleiding?",
-                CorrectResponse = "HBO-ICT",
-                Category = Category.Overig,
-                Difficulty = Difficulty.Easy
+                new Question()
+                {
+                    Text = "Wat is de naam van deze opleiding?",
+                    CorrectResponse = "HBO-ICT",
+                    Category = Category.Overig,
+                    Difficulty = Difficulty.Easy
+                },
+                new Question()
+                {
+                    Text = "Welke maand is het?",
+                    CorrectResponse = "November",
+                    Category = Category.Overig,
+                    Difficulty = Difficulty.Easy
+                },
+                new Question()
+                {
+                    Text = "Wat is 2 + 2?",
+                    CorrectResponse = "4",
+                    Category = Category.Wiskunde,
+                    Difficulty = Difficulty.Easy
+                },
+                new Question()
+                {
+                    Text = "Wat is 22 + 22?",
+                    CorrectResponse = "4",
+                    Category = Category.Wiskunde,
+                    Difficulty = Difficulty.Hard
+                },
+                new Question()
+                {
+                    Text = "In welk land wonen wij?",
+                    CorrectResponse = "Nederland",
+                    Category = Category.Aardrijkskunde,
+                    Difficulty = Difficulty.Normal
+                }
+               
             };
-
-            Question q2 = new Question()
-            {
-                Text = "Welke maand is het?",
-                CorrectResponse = "November",
-                Category = Category.Overig,
-                Difficulty = Difficulty.Hard
-            };
-
-            q1.Display();
-            Console.Write("Wat is uw antwoord? ");
-            var answer1 = Console.ReadLine();
-            Console.WriteLine(q1.CheckAnswer(answer1));
-
-            q2.Display();
-            Console.Write("Wat is uw antwoord? ");
-            var answer2 = Console.ReadLine();
-            Console.WriteLine(q2.CheckAnswer(answer2));
 
             Console.WriteLine("Druk op een knop om de Quiz af te sluiten");
             Console.ReadKey();
 
         }
+
     }
 }

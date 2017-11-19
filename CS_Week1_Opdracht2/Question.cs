@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CS_Week1_Opdracht2
 {
-    class Question
+    public class Question
     {
         public string Text { get; set; }
         public string CorrectResponse { get; set; }
@@ -18,14 +18,7 @@ namespace CS_Week1_Opdracht2
 
         public string CheckAnswer(string answer)
         {
-            if (answer.Equals(CorrectResponse))
-            {
-                return "Uw antwoord is correct!";
-            }
-            else
-            {
-                return"Uw antwoord is niet correct :(";
-            }
+            return answer.Equals(CorrectResponse) ? "Uw antwoord is correct!" : "Uw antwoord is niet correct :(";
         }
 
 
